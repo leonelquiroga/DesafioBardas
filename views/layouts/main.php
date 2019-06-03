@@ -28,10 +28,9 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
-        'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-fixed-top',
+            'id' => 'bardasHeader'
         ],
     ]);
     echo Nav::widget([
@@ -67,7 +66,6 @@ AppAsset::register($this);
     <div class="container">
         <div class="text-footer">
         <!--<p class="pull-left">&copy; My Company <?= date('Y') ?></p>-->
-        <p class="pull-left"> Contacto: </p>
 
         </div>
     </div>
