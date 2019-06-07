@@ -24,7 +24,8 @@ class AppAsset extends AssetBundle
         'css/responsive.css'
     ];
     public $js = [
-      'js/main.js'
+      'js/main.js',
+      'js/CountdownClock.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

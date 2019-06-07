@@ -20,6 +20,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -62,14 +63,39 @@ AppAsset::register($this);
       <?= Alert::widget() ?>
       <?= $content ?>
 
-<footer class="footer">
-    <div class="container">
-        <div class="text-footer">
-        <!--<p class="pull-left">&copy; My Company <?= date('Y') ?></p>-->
+      <section id="footer">
+      		<div class="container">
+      			<div class="row text-center text-xs-center text-sm-left text-md-left">
+      				<!--<div class="col-xs-12 col-sm-4 col-md-4">
 
-        </div>
-    </div>
-</footer>
+      					<ul class="list-unstyled list-inline quick-links">
+      						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+      						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+      						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+      						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+      						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+      					</ul>
+      				</div>-->
+      			</div>
+      			<div class="row">
+      				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+      					<ul class="list-unstyled list-inline social text-center">
+      						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+      						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+      						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+      						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+      					</ul>
+                                          <br>
+                                      </div>
+      			</div>
+      			<div class="row">
+      				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+      					<p><u><a href="https://www.uncoactiva.com/">Unco Activa</a></u> </p>
+      				</div>
+      			</div>
+      		</div>
+      	</section>
 
 <?php $this->endBody() ?>
 </body>

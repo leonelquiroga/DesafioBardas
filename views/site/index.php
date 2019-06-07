@@ -28,7 +28,7 @@ $this->title = 'Proyecto Web';
 
             <div class="jumbotron">
 
-                <h1 class="mb-5">"Tu residuo, tu responsabilidad"</h1>
+                <h2 class="mb-15 color-black">"Tu residuo, tu responsabilidad"</h2>
 
                 <p class="text-justify"> Este reto contará de etapas que serán de destreza física, a través del trote y recolección de residuos, y mental, en donde cada participante deberán contestar trivias con temáticas ambientales para ir sumando puntos.</p>
 
@@ -87,26 +87,6 @@ $this->title = 'Proyecto Web';
 
     </section>
 
-    <!-- Seccion sponsor -->
-    <section class="full-section">
-
-      <div class="container">
-          <div class="jumbotron">
-              <h1>Programa de sponsoreo</h1>
-          </div>
-          <div class="row">
-              <div class="col-lg-6">
-                  <p class="text-justify"> En esta 1era edición del desafio por las bardas, la colaboración de cada uno de los participantes es vital para su desarrollo ya que fomenta el deporte, los hábitos ambientales al igual que saludables, la importancia de la barda como un ambiente natural de nuestra ciudad.<br> Sin la participación de colaboadores el evento no se llevaría a cabo, ya que no se podrían cubrir gastos logísticos, organización y de publicidad. </p>
-              </div>
-              <div class="col-lg-6">
-                  <h3>"Buscamos y necesitamos de tu apoyo para costear este desafio."</h3>
-              </div>
-
-          </div>
-      </div>
-
-    </section>
-
     <!-- Seccion imagen/texto-->
     <section class="contenedor-full p-0">
 
@@ -134,25 +114,35 @@ $this->title = 'Proyecto Web';
 
     <section id="contacto" style="background-image:url('assets/img/fondo.jpg');" class="full-section">
 
-      <div class="row">
+      <div class="container">
 
-          <div class="col-lg-5">
-              <iframe width="457" height="235" src="https://w2.countingdownto.com/2473794" frameborder="0"></iframe>
+        <div class="row">
+
+          <div class="col-xs-12 col-md-5">
+
+            <div class="clock-container mt-ten color-black">
+
+              <span class="clock" id="demo"></span>
+              <span class="clocktext mt-30">Dias | Horas | Minutos</span>
+
+            </div>
+
           </div>
-          <div class="col-lg-7">
-            <h4 class="titulo-primario">Contactanos</h3>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Direccion de Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputComentario">Comentario</label>
-                  <textarea class="form-control" id="exampleInputComentario" placeholder="Ingrese su comentario..." rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-              </form>
-          </div>
+
+            <div class="col-xs-12 col-md-7">
+              <h4 class="titulo-primario">Contactanos</h3>
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="input-db" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <textarea class="input-db" id="exampleInputComentario" placeholder="Ingrese su comentario..." rows="3"></textarea>
+                  </div>
+                  <a href="" class="btn btn-grande btn-rounded btn-carrera mt-10">Enviar</a>
+                </form>
+            </div>
+
+        </div>
 
       </div>
 

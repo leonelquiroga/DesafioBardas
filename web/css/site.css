@@ -132,6 +132,8 @@ z-index: 9;
 background: #f7f7f8;
 }
 
+.color-black {color: #232323;}
+
 .default-btn:hover {color: #f7f7f8; background: #333333}
 
 .banner-btn {
@@ -321,6 +323,13 @@ a.desc:after {
 }
 
 /*************************
+     Inputs & form
+*************************/
+.input-db {border-radius:30px; width:100%; padding:5px 15px; font-size: smaller; border:none;background-color: #FFF; -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);}
+
+/*************************
      Basic margin padding
 *************************/
 .m-0 {
@@ -338,7 +347,9 @@ a.desc:after {
 /*************************
         Margin top
 *************************/
+.mt-ten { margin-top: 10% }
 .mt-0 { margin-top: 0 }
+.mt-5 { margin-top: 5px }
 .mt-10 { margin-top: 10px }
 .mt-15 { margin-top: 15px }
 .mt-20 { margin-top: 20px }
@@ -826,26 +837,21 @@ a.desc:after {
 .btn-warning, .btn-warning:hover { color: #fff; }
 
 .btn.btn-carrera {
-    background : -moz-linear-gradient(0% 50% 0deg,rgba(106, 138, 124, 1) 0%,rgba(113, 137, 119, 1) 17.4%,rgba(132, 135, 105, 1) 42.63%,rgba(164, 132, 81, 1) 72.45%,rgba(199, 128, 55, 1) 100%);
-    background : -webkit-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(106, 138, 124, 1) ),color-stop(0.174,rgba(113, 137, 119, 1) ),color-stop(0.4263,rgba(132, 135, 105, 1) ),color-stop(0.7245,rgba(164, 132, 81, 1) ),color-stop(1,rgba(199, 128, 55, 1) ));
-    background : -o-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    background : -ms-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#6A8A7C', endColorstr='#C78037' ,GradientType=0)";
-    background : linear-gradient(90deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
+    background: rgba(106,138,124,1);
+    background: -moz-linear-gradient(left, rgba(106,138,124,1) 0%, rgba(199,127,55,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106,138,124,1)), color-stop(100%, rgba(199,127,55,1)));
+    background: -webkit-linear-gradient(left, rgba(106,138,124,1) 0%, rgba(199,127,55,1) 100%);
+    background: -o-linear-gradient(left, rgba(106,138,124,1) 0%, rgba(199,127,55,1) 100%);
+    background: -ms-linear-gradient(left, rgba(106,138,124,1) 0%, rgba(199,127,55,1) 100%);
+    background: linear-gradient(to right, rgba(106,138,124,1) 0%, rgba(199,127,55,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a8a7c', endColorstr='#c77f37', GradientType=1 );
     border-color: transparent;
     color: #ffffff;
 }
 
 .btn.btn-carrera:hover{
     background: transparent;
-    border-color : -moz-linear-gradient(0% 50% 0deg,rgba(106, 138, 124, 1) 0%,rgba(113, 137, 119, 1) 17.4%,rgba(132, 135, 105, 1) 42.63%,rgba(164, 132, 81, 1) 72.45%,rgba(199, 128, 55, 1) 100%);
-    border-color : -webkit-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(106, 138, 124, 1) ),color-stop(0.174,rgba(113, 137, 119, 1) ),color-stop(0.4263,rgba(132, 135, 105, 1) ),color-stop(0.7245,rgba(164, 132, 81, 1) ),color-stop(1,rgba(199, 128, 55, 1) ));
-    border-color : -o-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color : -ms-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#6A8A7C', endColorstr='#C78037' ,GradientType=0)";
-    border-color : linear-gradient(90deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
+    border-color: #6a8a7c;
     color: #5b5b5e;
 }
 
@@ -861,37 +867,6 @@ a.desc:after {
 .btn.btn-transparent-deep-pink {background: transparent; border-color: #00ffff; color: #00ffff}
 .btn.btn-transparent-deep-pink:hover, .btn.btn-transparent-deep-pink:focus {background: #00ffff; border-color: #00ffff; color: #fff}
 
-.btn.btn-transparent-carrera
-{
-    background: transparent;
-    border-color : -moz-linear-gradient(0% 50% 0deg,rgba(106, 138, 124, 1) 0%,rgba(113, 137, 119, 1) 17.4%,rgba(132, 135, 105, 1) 42.63%,rgba(164, 132, 81, 1) 72.45%,rgba(199, 128, 55, 1) 100%);
-    border-color : -webkit-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(106, 138, 124, 1) ),color-stop(0.174,rgba(113, 137, 119, 1) ),color-stop(0.4263,rgba(132, 135, 105, 1) ),color-stop(0.7245,rgba(164, 132, 81, 1) ),color-stop(1,rgba(199, 128, 55, 1) ));
-    border-color : -o-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color : -ms-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color : linear-gradient(90deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90) progid:DXImageTransform.Microsoft.gradient(startColorstr='#6A8A7C',endColorstr='#C78037' , GradientType=1);
-    color: #5b5b5e;
-}
-
-
-.btn.btn-transparent-carrera:hover{
-    background : -moz-linear-gradient(0% 50% 0deg,rgba(106, 138, 124, 1) 0%,rgba(113, 137, 119, 1) 17.4%,rgba(132, 135, 105, 1) 42.63%,rgba(164, 132, 81, 1) 72.45%,rgba(199, 128, 55, 1) 100%);
-    background : -webkit-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(106, 138, 124, 1) ),color-stop(0.174,rgba(113, 137, 119, 1) ),color-stop(0.4263,rgba(132, 135, 105, 1) ),color-stop(0.7245,rgba(164, 132, 81, 1) ),color-stop(1,rgba(199, 128, 55, 1) ));
-    background : -o-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    background : -ms-linear-gradient(0deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#6A8A7C', endColorstr='#C78037' ,GradientType=0)";
-    background : linear-gradient(90deg, rgba(106, 138, 124, 1) 0%, rgba(113, 137, 119, 1) 17.4%, rgba(132, 135, 105, 1) 42.63%, rgba(164, 132, 81, 1) 72.45%, rgba(199, 128, 55, 1) 100%);
-    border-color: transparent;
-    opacity : 0.9;
-    border-radius : 23px;
-    -moz-border-radius : 23px;
-    -webkit-border-radius : 23px;
-    filter: alpha(opacity=90) progid:DXImageTransform.Microsoft.Alpha(opacity=90) progid:DXImageTransform.Microsoft.gradient(startColorstr='#6A8A7C',endColorstr='#C78037' , GradientType=1);
-
-    color: #ffffff;
-}
 /* button rounded */
 .btn.btn-rounded {border-radius: 50px}
 .btn.btn-rounded.btn-very-small {padding: 2px 23px 1px;}
@@ -1080,6 +1055,82 @@ a.desc:after {
 
 .navbar-nav > li > a:hover {color:#ea9242;background-color:transparent}
 .sticky{background-color: #FFF; box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);}
-.sticky .navbar-nav > li > a {color:#666666;}
+.sticky .navbar-nav > li > a {color:#666666;font-weight: 600;}
 .sticky .navbar-nav > li > a:hover {color:#ea9242;background-color:transparent}
 #bardasHeader{transition: all 0.5s ease-out;}
+
+#footer h5{
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+#footer {
+    height: auto;
+    background-color: black !important;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+.clock{
+    font-size: 80px;
+    margin-left: 50px;
+
+}
+.clocktext{
+    font-size: 20px;
+    margin-left: 125px;
+}
